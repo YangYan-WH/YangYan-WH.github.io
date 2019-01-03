@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Hypertext Markup Language，简称HTML，用来结构化Web网页及其内容的标记语言，HTML由一系列的元素组成，我们可以使用它来封装，包装或标记内容的不同部分，使其以某种方式显示，或以某种方式执行。   HTML元素   元素的主要由以下几个部分组成   开始标签（open tag） 结束标签（closing tag）（空标签没有结束标签） 内容（content） 元素（e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML">
+<meta property="og:url" content="http://yoursite.com/2018/05/22/HTML/index.html">
+<meta property="og:site_name" content="YangYan&#39;s Front-end Notes">
+<meta property="og:description" content="Hypertext Markup Language，简称HTML，用来结构化Web网页及其内容的标记语言，HTML由一系列的元素组成，我们可以使用它来封装，包装或标记内容的不同部分，使其以某种方式显示，或以某种方式执行。   HTML元素   元素的主要由以下几个部分组成   开始标签（open tag） 结束标签（closing tag）（空标签没有结束标签） 内容（content） 元素（e">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-01-03T14:13:17.326Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML">
+<meta name="twitter:description" content="Hypertext Markup Language，简称HTML，用来结构化Web网页及其内容的标记语言，HTML由一系列的元素组成，我们可以使用它来封装，包装或标记内容的不同部分，使其以某种方式显示，或以某种方式执行。   HTML元素   元素的主要由以下几个部分组成   开始标签（open tag） 结束标签（closing tag）（空标签没有结束标签） 内容（content） 元素（e">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/22/HTML/">
+
+
+
+
+
+  <title>HTML | YangYan's Front-end Notes</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">YangYan's Front-end Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/22/HTML/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yang Yan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YangYan's Front-end Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-22T22:26:00+08:00">
+                2018-05-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>Hypertext Markup Language，简称HTML，用来结构化Web网页及其内容的标记语言，HTML由一系列的元素组成，我们可以使用它来封装，包装或标记内容的不同部分，使其以某种方式显示，或以某种方式执行。 </p>
+</blockquote>
+<p><strong>HTML元素</strong> </p>
+<ol>
+<li>元素的主要由以下几个部分组成  </li>
+<li>开始标签（open tag）</li>
+<li>结束标签（closing tag）（空标签没有结束标签）</li>
+<li>内容（content）</li>
+<li>元素（element）—— 开始标记+结束标记+内容 = 元素  </li>
+</ol>
+<p><strong>常用标签简介</strong>  </p>
+<ul>
+<li><p><code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>  HTML文档基本结构标签  </p>
+</li>
+<li><p><code>&lt;style&gt;&lt;/style&gt; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;theme.css&quot; /&gt;</code>样式标签，前者是内部样式，后者是外部样式且属于空标签  </p>
+</li>
+<li><p><code>&lt;h1&gt;&lt;/h1&gt;  ~~   &lt;h6&gt;&lt;/h6&gt;</code>  标题标签 ，从一级标题到六级标题  </p>
+</li>
+<li><p><code>&lt;p&gt;&lt;/p&gt;</code> 段落标签  </p>
+</li>
+<li><p><code>&lt;main&gt;&lt;/main&gt; &lt;header&gt;&lt;/header&gt; &lt;footer&gt;&lt;/footer&gt;</code> 语义化标签，区分文档内容  </p>
+</li>
+<li><p><code>&lt;ul&gt;&lt;/ul&gt;</code> 无序列表，通常配合<code>&lt;li&gt;&lt;/li&gt;</code>使用  </p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt; </span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>&lt;ol&gt;&lt;/ol&gt;</code>有序列表，配合<code>&lt;li&gt;&lt;/li&gt;</code>使用</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>&lt;img src=&quot;xxx&quot;&gt;</code> 图片标签，空标签，可替换标签，src输入地址可以显示图片  </p>
+</li>
+<li><p><code>&lt;iframe src=&quot;xxx&quot; name=“”&gt;&lt;/iframe&gt;</code> 页面嵌套标签  </p>
+</li>
+<li><p><code>&lt;a href=&quot;xxx&quot;&gt;&lt;/a&gt;</code> 超链接标签，页面跳转（HTTP GET请求），下有a标签几种用法  </p>
+<ul>
+<li><code>&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;</code> 点击锚点不发出请求  </li>
+<li><code>&lt;a href=&quot;javascript:;&quot;&gt;&lt;/a&gt;</code> 标签中存在伪协议标签，点击后不进行任何操作iframe 和 a 结合使用<br>属性见 MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a</a>  <pre><code>&lt;iframe name=xxx src=&quot;#&quot;&gt;&lt;/iframe&gt;
+&lt;a target=xxx href=&quot;www.qq.com&quot;&gt;&lt;/a&gt; //点击a标签，会在iframe处打开网页
+</code></pre></li>
+</ul>
+</li>
+<li><p><code>&lt;form action=&quot;&quot; &gt;&lt;/form&gt;</code>  表单标签，页面跳转（HTTP POST请求）<br>属性见MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form</a>  </p>
+</li>
+<li><p><code>&lt;label&gt;&lt;input type=&quot;xxx&quot; &gt;&lt;/label&gt;</code> 表单输入标签  </p>
+<ul>
+<li>type=”text”   文本输入框  </li>
+<li>type=”password”  密码输入框  </li>
+<li>type=”checkbox” 多选框  </li>
+<li>type=”radio” 单选框  同一个name的radio，只能选一个  </li>
+<li>type=”date” 日期选择  </li>
+<li>type=”submit” 提交按钮<br>input属性见MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input</a>  </li>
+</ul>
+</li>
+<li><p><code>&lt;button&gt;&lt;/button&gt;</code> 输入标签 ,与input的区别是，input为空标签<br>  如果一个form只有一个button且没有写类型，那么button会自动变为submit提交按钮  </p>
+</li>
+<li><p><code>&lt;table&gt;&lt;table&gt;</code> 表格标签，用于页面展示表格  </p>
+<ul>
+<li><code>&lt;caption&gt;&lt;/caption&gt;</code> 可选元素，用于展示表格标题  </li>
+<li><code>&lt;thead&gt;&lt;/thead&gt;</code> 可选元素，表示表格第一部分  </li>
+<li><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code> 可选元素，表示表格最后部分  </li>
+<li><code>&lt;/tbody&gt;&lt;/tbody&gt;</code> 表示表格主体部分  </li>
+<li><code>&lt;tr&gt;&lt;/tr&gt;</code> 表格中的行  </li>
+<li><code>&lt;td&gt;&lt;/td&gt;</code> 表格中的数据，通常包裹在<code>&lt;tr&gt;&lt;/tr&gt;</code>之间，表现为列  </li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/13/Http/" rel="next" title="HTTP">
+                <i class="fa fa-chevron-left"></i> HTTP
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/29/CSS-Layout/" rel="prev" title="CSS Layout">
+                CSS Layout <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Yang Yan</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yang Yan</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
